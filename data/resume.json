@@ -1,0 +1,108 @@
+{
+	"photo": "profile_bw.jpg",
+
+	"docLink": "https://docs.google.com/document/d/e/2PACX-1vRf0ObxndIS6Ag3XT24tCsraVxYpeUX8uPxWWB7Ntsw7ba8ofmDCvSqDbSV_8lwfV7QzMbzU7_M9k5b/pub",
+
+	"pdfLink": "webresume.pdf",
+
+	"contactInfo": {
+		"firstName": "Duane",
+		"lastName": "Anderson",
+		"tel": "347-238-9508",
+		"email": "dka.rainmaking@yahoo.com",
+		"address1": "116-42 144 Street",
+		"address2": "Jamaica, NY 11436"
+	},
+	
+	"skills" : {
+		"summary": "Experienced, Web Designer / Frontend Developer with skills in responsive design, HTML5, CSS3, JavaScript, React, jQuery, PHP, Node and the Creative Suite",
+		"advanced": "HTML5, CSS, LESS, Photoshop, Illustrator, JavaScript, jQuery, WordPress",
+		"intermediate": "PHP, Apache Server, MySQL,  Node, MongoDB, Express, Grunt, Responsive Web Design, jQuery Mobile, Handlebars, Backbone, React, Angular"
+	},
+
+	"experience": [
+		{
+			"startDate": "04/18",
+			"endDate": "present",
+			"url": "http://artbyduanek.com",
+			"jobTitle": "Awesome Person",
+			"company": "dkanderson designs",
+			"projects": [
+
+				"https://github.com/dkanderson/artshop",
+				"https://github.com/dkanderson/artshop/tree/mongo",
+				"https://github.com/dkanderson/artshop-react",
+				"https://github.com/dkanderson/calculator",
+				"https://github.com/dkanderson/calculator-react"
+
+			]
+		},
+		
+		
+		{
+			"company": "J.P. Morgan Chase & CO",
+			"jobTitle": "Web Appliction Developer",
+			"url": "http://jpmorganchase.com",
+			"startDate": "08/15",
+			"endDate": "10/16",
+			"projects" : [
+				"Developed UI components for JavaScript web applications",
+				"Used LESS, Require JS, React JS and JavaScript to improve and maintain UI frameworks, components and applications",
+				"Used Angular JS/LESS to develop UI framework based on online banking application"
+			] 
+		},
+
+		{
+			"company": "Jamaica Information Service",
+			"jobTitle": "Web Designer/Developer",
+			"url": "http://jis.gov.jm",
+			"startDate": "10/12",
+			"endDate": "07/14",
+			"projects" : [
+				"Redesigned / Developed Prime Ministers Website using JavaScript and PHP with WordPress as a CMS",
+				"Redesigned / Developed Company Website using JavaScript and PHP with WordPress as a CMS",
+				"Redesigned / Developed Several client and affiliate Website using JavaScript and PHP with WordPress as a CMS",
+				"Designed and developed mobile app using jQuery Mobile, Phonegap and Handlebars for IOS and Android"
+			] 
+		},
+
+		{
+			"company": "Jamaica National Building Society",
+			"jobTitle": "Interim Web Master",
+			"url": "http://jnbs.com",
+			"startDate": "04/11",
+			"endDate": "07/11",
+			"projects" : [
+				"Redesigned / Developed Company Website using JavaScript and PHP with WordPress as a CMS",
+				"Redesigned / Developed Several client and affiliate Website using JavaScript and PHP with WordPress as a CMS",
+				"Designed several newsletter templates"
+			] 
+		},
+
+		{
+			"company": "Jamaica Gleaner Company",
+			"jobTitle": "Web Designer",
+			"url": "http://jamaica-gleaner.com",
+			"startDate": "04/11",
+			"endDate": "07/11",
+			"projects" : [
+				"Redesigned / Developed Blogging platform templates using JavaScript and PHP with WordPress as a CMS",
+				"Redesigned Several client and affiliate Website using JavaScript and PHP with WordPress as a CMS",
+				"Redesigned Company website, using Frontend technologies"
+			] 
+		}
+
+		
+	],
+
+	"education": {
+		"college": "University of Technology",
+		"location": "Kingston, Jamaica",
+		"url": "https://www.utech.edu.jm/",
+		"certification": "Diploma",
+		"course": "Computer Science",
+		"startDate": "09/97",
+		"endDate": "06/00"
+	}
+
+}

@@ -1,0 +1,67 @@
+[
+    {
+      "title": "Daisy",
+      "status": "work in progress",
+      "medium": "Acrylic on canvas",
+      "subject": "Taylor Swift",
+      "type": "Black and white portrait",
+      "size": "11\" x 14\"",
+      "orientation": "portrait",
+      "price": "6500",
+      "url": "daisy.jpg",
+      "description": "\"I once was poison ivy but now I am your daisy\", inspired by her own words and the triumph and beauty she represents to her fans all over the world, a flower, a light and a queen",
+      "id": 1
+    },
+    {
+      "title": "Angel",
+      "status": "work in progress",
+      "medium": "Acrylic on canvas",
+      "subject": "Lady Fit",
+      "type": "Black and white portrait",
+      "size": "11\" x 14\"",
+      "orientation": "porttrait",
+      "price": "6500",
+      "url": "angel.jpg",
+      "description": "Of deep personal significance to me, it represents a real turning point in my life, a moment that can only be descibed as light rushing into a dark cave and the wings of an angel, love, light and an ocean. What more does a guy need.",
+      "id": 2
+    },
+    {
+      "title": "Flower",
+      "status": "completed",
+      "medium": "Acrylic on canvas",
+      "subject": "Kendall Jenner",
+      "type": "Black and white portrait",
+      "size": "11\" x 14\"",
+      "orientation": "porttrait",
+      "price": "6500",
+      "url": "flower.jpg",
+      "description": "\"Natures first green is gold, her hardest hue to hold, her early leaf's a flower but only so an hour\", from Robert Frost's poem, Nothing Gold Can Stay a tribute to the fragility of beauty, innocence and youth, a celebration of its secrets and a woman who encapsulates them all.",
+      "id": 3
+    },
+    {
+      "title": "Tulip",
+      "status": "completed",
+      "medium": "acrylic on canvas",
+      "subject": "Dua Lipa",
+      "type": "black and white portrait",
+      "size": "11\" x 14\"",
+      "orientation": "porttrait",
+      "price": "6500",
+      "url": "tulip.jpg",
+      "description": "Stiill in transit through time and space, my mind and its future place.",
+      "id": 4
+    },
+    {
+      "title": "Kids",
+      "status": "completed",
+      "medium": "acrylic on canvas",
+      "subject": "Berlin Wall Kids",
+      "type": "black and white portrait",
+      "size": "14\" x 11\"",
+      "orientation": "lanscape",
+      "price": "5000",
+      "url": "kids.jpg",
+      "description": "Barriers to love, to peace, to freedom, to prosperity and far too often to the truth, obdurate fences around haunting romances and the view from above it all, in defiance",
+      "id": 5
+    }
+  ]

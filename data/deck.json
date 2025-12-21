@@ -1,0 +1,37 @@
+{
+	"title": "",
+	"subtitle": "",
+	"working": {
+		"title": "Angel in a Cave",
+		"description": "Of deep personal significance to me, it represents a real turning point in my life, a moment that can only be descibed as light rushing into a dark cave and the wings of an angel, love, light and an ocean. What more does a guy need.",
+		"imageUrl": "angel.jpg",
+		"specs": {
+			"subject": "LadyFit",
+			"medium": "Acrylic on canvas",
+	        "type": "Black and White Portrait",
+	        "size": "11\" x 14\""
+		}
+	},
+
+	"next": {
+		"title": "tulip",
+		"description": "Stiill in transit through time and space, my mind and its future place.",
+		"imageUrl": "tulip.jpg",
+		"specs": {
+			"subject": "Dua Lipa",
+			"medium": "Acrylic on canvas",
+	        "type": "Black and White Portrait",
+	        "size": "11\" x 14\""
+		}
+	},
+
+	"reading": {
+		"title": "Light",
+		"subtitle": "A Radiant History from Creation to the Quantum Age",
+		"description": "As an artist and amateur scientist, or so I tell myself. I am fascinated with light, I found this book in the library, I know nothing of the author except he's writen one of the most beautiful introductions I have ever read and I can't wait to hear the rest.",
+		"author": "Bruce Watson",
+		"thumb": "lightBook1.jpg",
+		"imageUrl": "lightBook.jpg",
+		"url": ""
+	}
+}
