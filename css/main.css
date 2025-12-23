@@ -1372,16 +1372,22 @@ nav.main li a {
   background-image: url(../img/stars_sm.jpg);
   background-attachment: fixed;
   background-size: cover;
+  overflow: hidden;
 }
 
 .moon-wrapper{
-  position:  absolute;
-  width:  100%;
-  min-height:  700px;
+  float: left;
+  width:  616px;
+  min-height:  603px;
+  margin: 2em 4.5em 0 -15em;
   z-index: 5;
   background-image: url(../img/moon.png);
   background-repeat: no-repeat;
-  background-position: -200px 20px;
+  background-position: 0px 0px;
+  shape-outside: circle(100%); /* Circular wrap */
+  clip-path: circle(100%);     /* Visually clip image */
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(100%);
 }
 
 .home-title{
@@ -1414,40 +1420,14 @@ nav.main li a {
   min-height:  85vh;
 }
 
-.countdown-clock .clock-num{
-  font-size:  3rem;
-  font-family: "Xanh Mono";
-  font-weight: 400;
-  color:  #efefef;
-  display: inline-block;
-  background-color: #044C40;
-  padding: 10px 5px 5px 5px;
-  border-radius: 10px;
-  margin-right:  10px;
-  position:  relative;
-}
-
-.countdown-clock .clock-num .label{
-  display:  block;
-  position:  absolute;
-  top:  2px;
-  left:  3px;
-  font-size: .7rem;
-  font-family:  "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
-  font-style: normal;
-}
-
-
-.sp-header{
-  position:  absolute;
-  width:  50vw;
-  top:  10%;
-  left:  40%;
-  z-index: 10;
+.hero{
   text-align: left;
+  float: left;
+  width: 50vw;
+  margin-top: 5%;
 }
 
-.sp-header h1{
+.space h1{
   font-family: "Roboto slab", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   font-weight:  700;
   color:  #efefef;
@@ -1455,24 +1435,24 @@ nav.main li a {
   margin:  10px 0; 
   padding:  0;
 }
-.sp-header h2{
+.space h2{
   font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
   color:  #B11225;
   font-size: 2.5rem;
   padding: 0;
   margin:  0;
 }
-.sp-header p{
+.space p{
   color:  #ccc;
 }
 
-.sp-header p a{
+.space p a{
   text-decoration: none;
   font-weight:  400;
   color:  #D86D7A;
 }
 
-.sp-header p a:hover{
+.space p a:hover{
   color:  #B11225;
 }
 
@@ -1542,25 +1522,31 @@ nav.main li a {
   position: relative;
   z-index: 20;
 }
-.art-frame .art-work{
+.art-work{
   width: 280px;
   margin-right:  20px;
   float:  left;
 }
 
-.art-frame img{
+.art-work img{
   max-width: 100%;
 }
 
-.specials-list{
+.the-special-list{
   margin-top:  40px;
   padding:  20px 0;
   background-color: #000;
   position:  relative;
 }
 
-.art-frame{
-  position:  relative;
+.specials-list{
+  list-style-type: none;
+  margin: 2em 15%;
+}
+
+.specials-list > li{
+  display: flex;
+  padding: 2em 0;
 }
 
 .specials-list .button-wrapper{
@@ -1628,25 +1614,32 @@ nav.main li a {
       z-index: 10;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
   .moon-wrapper{
-    background-size: 60%;
+    margin-left: -250px;
+    margin-right: 2em;
   }  
+  .space h1{
+    font-size: 3em;
+  }
+  .space h2{
+    font-size: 2em;
+  }
   .sp-header h1{
     font-size: 3.5rem;
   }
   
 }
 
-@media (max-width: 568px) {
+@media (max-width: 829px) {
 
   .moon-wrapper{
-    position:  absolute;
-    width:  100%;
-    height:  100%;
-    z-index: 5;
-    background-position: -130px -40px;
-    background-size: 50%;
+    width:  80%;
+    margin-left: -400px;
+  }
+
+  .intro{
+    width: 60vw;
   }
 
   .specials-list{
@@ -1699,6 +1692,20 @@ nav.main li a {
     font-size: 2rem;
   }
 
+}
+
+@media (max-width: 780px) {
+  .moon-wrapper{
+    display: none;
+  }
+
+  .intro{
+    width: 80vw;
+    text-align: center;
+    float: none;
+    margin: 0 10vw;
+    padding: 10% 0;
+  }
 }
 
 /* 

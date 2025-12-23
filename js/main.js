@@ -99,6 +99,53 @@ console.log(data);
         // JavaScript to be fired on the home page
         // Starfield
         // -----------------------------------------------------------
+        const specials = document.getElementById("specials");
+
+        const specListContainer = document.createElement("ul");
+
+        specListContainer.classList.add("specials-list");
+
+        const specData = data.specials;
+
+        const specList = specData.map((spec) => {
+          return `
+            <li data-key="${data.id}">
+              <div class="featured-art">  
+                <a
+                  href="artwork/specials/${spec.url}"
+                  data-featherlight="image"
+                  class="art-work img-view"
+                >
+                  <img
+                    src="artwork/specials/${spec.url}"
+                    alt="${spec.subject}"
+                  />   
+                </a>
+                    
+                <div class="featured-description">
+                  <div class="sp info-box">
+                    <h3>
+                      ${spec.title} <i>|</i>
+                      <span class="subject">${spec.subject} </span>
+                    </h3>
+                    <p>
+                      ${spec.description}
+                    </p>
+                    <ul class="details">
+                      <li><span>Medium: </span> ${spec.medium}</li>
+                      <li><span>Orientation: </span> ${spec.orientation}</li>
+                      <li><span>Size: </span> ${spec.size}</li>
+                    </ul>
+                    "
+                  </div>
+                </div>
+              </div>
+            </li>
+          `;
+        });
+
+        specListContainer.innerHTML = specList.join("");
+        specials.appendChild(specListContainer);
       },
     },
 

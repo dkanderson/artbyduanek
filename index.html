@@ -117,8 +117,9 @@
       </div>
 
       <div class="home-wrapper">
-        <div id="space" class="space">
-          <div id="sp-header" class="sp-header">
+        <div id="space" class="space clearfix">
+          <div class="moon-wrapper"></div>
+          <div id="hero" class="hero">
             <h1>Painting the Stars</h1>
             <h2>Artwork by <span class="my-name">Duane Anderson</span></h2>
             <p>
@@ -131,59 +132,20 @@
               time when the work has been darkened by so many strange things,
               art has often been my refuge and loyal friend, I hope you enjoy
               them. I also build websites, like this one for instance, check out
-              my <a href="resume.html">resume</a> I am looking for a job and a
-              blog is coming soon. More <a href="art.html">artwork here</a>.
+              my
+              <a href="resume.html">resume</a> I am looking for a job and a blog
+              is coming soon.
+            </p>
+            <p>
+              <a href="art.html"
+                >View the artwork collection here
+                <img alt="view more artwork" src="./img/arrow_r.svg" /></a
+              >.
             </p>
           </div>
-          <div class="moon-wrapper"></div>
         </div>
-        <div class="the-special-list">
-          <div id="the-specials" class="specials-list clearfix">
-            <div id="spec" class="container">
-              <article class="art-frame black-white clearfix">
-                <div class="row">
-                  <div class="four columns">
-                    <a
-                      href="artwork/specials/daisy.jpg"
-                      data-featherlight="image"
-                      class="art-work img-view"
-                    >
-                      <div class="artwork">
-                        <div class="art">
-                          <img
-                            src="artwork/specials/daisy.jpg"
-                            alt="Taylor Swift"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="twelve columns">
-                    <div class="sp info-box">
-                      <h3>
-                        Daisy <i>|</i>
-                        <span class="subject"> Taylor Swift </span>
-                      </h3>
-                      <p>
-                        "I once was poison ivy but now I am your daisy",
-                        inspired by her own words and the triumph and beauty she
-                        represents to her fans all over the world, a flower, a
-                        light and a queen
-                      </p>
-                      <ul class="details">
-                        <li><span>Medium: </span> Acrylic on Canvas</li>
-                        <li><span>Type: </span> Portrait</li>
-                        <li><span>Size: </span> 11" x 14"</li>
-                      </ul>
-                      "
-                    </div>
-                  </div>
-                </div>
-                "
-              </article>
-              ";
-            </div>
-          </div>
+        <div id="specials" class="the-special-list">
+          <!-- dynamic loaded data -->
         </div>
       </div>
 
@@ -278,5 +240,6 @@
   </body>
 
   <script type="text/javascript" src="vendor/jquery.js"></script>
+  <script type="text/javascript" src="vendor/featherlight.js"></script>
   <script type="module" src="js/main.js"></script>
 </html>
