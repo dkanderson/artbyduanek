@@ -1638,7 +1638,7 @@ nav.main li a {
     margin-left: -400px;
   }
 
-  .intro{
+  .hero{
     width: 60vw;
   }
 
@@ -1699,7 +1699,7 @@ nav.main li a {
     display: none;
   }
 
-  .intro{
+  .hero{
     width: 80vw;
     text-align: center;
     float: none;
