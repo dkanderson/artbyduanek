@@ -936,7 +936,11 @@ nav.main li a {
   }
 
    .specials-list > li .featured-art a{
-    width: 100%;
+    width: 90%;
+   }
+
+   .specials-list{
+    margin: 0;
    }
 
 }
