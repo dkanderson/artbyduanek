@@ -420,6 +420,7 @@ nav.main li a {
   left: 0;
   top: 0;
   z-index: 900;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .menu-container {
@@ -592,6 +593,352 @@ nav.main li a {
   -o-transition: all 800ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
      transition: all 800ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
   -webkit-transition: all 800ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
+}
+
+/* 
+----------------------------------------------
+# Home
+---------------------------------------------- 
+*/
+
+.home-wrapper{
+  width:  100%;
+  height:  auto;
+  position: relative;
+  background-image: url(../img/stars_sm.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.moon-wrapper{
+  float: left;
+  width:  616px;
+  min-height:  603px;
+  margin: 2em 4.5em 0 -15em;
+  z-index: 5;
+  background-image: url(../img/moon.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  shape-outside: circle(100%); /* Circular wrap */
+  clip-path: circle(100%);     /* Visually clip image */
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(100%);
+}
+
+.home-title{
+  font-family: "Roboto slab", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  color:  #AFD746;
+  font-size:  3rem;
+  font-weight: 700;
+}
+
+.home-wrapper .content-wrapper{
+  padding:  40px;
+  background-color:  #fff;
+  border-top:  4px solid #D86D7A;
+}
+.countdown-clock{
+  padding:  20px 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.countdown-clock .clock-title{
+  font-size: 1rem;
+  color:  #5EBAAB;
+}
+
+.clock{
+  padding-top: 20px;
+}
+
+.space{
+  min-height:  85vh;
+}
+
+.hero{
+  text-align: left;
+  float: left;
+  width: 50vw;
+  margin-top: 5%;
+}
+
+.space h1{
+  font-family: "Roboto slab", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-weight:  700;
+  color:  #efefef;
+  font-size: 4rem;
+  margin:  10px 0; 
+  padding:  0;
+}
+.space h2{
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+  color:  #B11225;
+  font-size: 2.5rem;
+  padding: 0;
+  margin:  0;
+}
+.space p{
+  color:  #ccc;
+}
+
+.space p a{
+  text-decoration: none;
+  font-weight:  400;
+  color:  #D86D7A;
+}
+
+.space p a:hover{
+  color:  #B11225;
+}
+
+
+.sp.info-box{ 
+  text-align: left;
+}
+
+.sp.info-box h3{
+  color:  #D86D7A;
+  font-family: "Roboto slab", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-weight:  700;
+  font-size:  3rem;
+  padding:  0;
+  margin:  -13px 0 20px 0;
+}
+
+.sp.info-box h3 i{
+  font-style: normal;
+  font-weight: 100;
+  color:  rgba(255, 255, 255, .125);
+}
+
+.sp.info-box h3 .subject{
+  color:  #333;
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+  font-weight:  400;
+  font-size:  2rem;
+}
+
+.my-name{
+  color:  #AFD746;
+}
+
+.sp.info-box p{
+  color:  #fff;
+}
+
+.sp.info-box .details{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sp.info-box .details li{
+  padding:  5px 0;
+  border-bottom:  1px dotted rgba(255, 255, 255, .125);
+  color:  #efefef;
+}
+
+.sp.info-box .details li span{
+  font-weight:  400;
+  color:  #D86D7A;
+}
+
+.featured-art{
+  display: flex;
+}
+
+.featured-art .art-work{
+  width: 25%;
+}
+
+/* Reused in the Gallery */
+.art-work{
+  width: 280px;
+  display: block;
+  margin-right:  20px;
+  float:  left;
+  flex: 1;
+}
+
+.art-work img{
+  max-width: 100%;
+}
+
+.featured-description{
+  flex: 3;
+}
+
+.the-special-list{
+  margin-top:  40px;
+  padding:  20px 0;
+  background-color: #000;
+  position:  relative;
+}
+
+.specials-list{
+  list-style-type: none;
+  margin: 2em 15%;
+}
+
+.specials-list > li{
+  display: flex;
+  padding: 2em 0;
+}
+
+.specials-list .button-wrapper{
+  position:  absolute;
+  top: 10px;
+  right:  10px;
+  z-index: 30;
+}
+
+.specials-list .button-wrapper button{
+  background-color: #83AE12;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin-left: 5px;
+}
+
+.nav-link{
+  position:  relative;
+}
+
+.nav-link:hover .popgoes{
+  display: block;
+}
+
+.popgoes{
+  display: none;
+  position:  absolute;
+  width: 300px;
+  height:  100px;
+  background-color: #fff;
+  border-radius: 5px;
+  top:  -110px;
+  right:  20px;
+  background: url(../img/park.jpg);
+  z-index: 20;
+  border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.pop-inner{
+  background-color: rgba(0, 0, 0, .5);
+  margin: 10px;
+  padding: 10px;
+  display: inherit;
+  text-align: center;
+  color:  #fff;
+  font-weight: 400;
+  font-size: 1.3rem;
+  border: 1px solid rgba(255, 255, 255, .65);
+}
+
+.popgoes::after{
+      content:  '';
+      position:  absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid rgba(255, 255, 255, .5);
+      top:  99px;
+      right:  20px;
+      z-index: 10;
+}
+
+@media (max-width: 1080px) {
+  .moon-wrapper{
+    margin-left: -250px;
+    margin-right: 2em;
+  }  
+  .space h1{
+    font-size: 3em;
+  }
+  .space h2{
+    font-size: 2em;
+  }
+  .sp-header h1{
+    font-size: 3.5rem;
+  }
+
+   .specials-list{
+    margin: 2em 5%;
+  }
+  
+}
+
+@media (max-width: 829px) {
+
+  .moon-wrapper{
+    width:  80%;
+    margin-left: -400px;
+  }
+
+  .hero{
+    width: 60vw;
+  }
+
+  .sp-header h1{
+    font-size: 3rem;
+    margin:  10px 0; 
+    padding:  0;
+  }
+
+  .sp-header h2{
+    font-size: 2rem;
+  }
+
+  .sp-header{
+    
+    width:  80vw;
+    top:  3%;
+    left:  10%;
+    z-index: 10;
+    text-align: center;
+  }
+
+  .sp.info-box{
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .sp.info-box h3{
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .moon-wrapper{
+    display: none;
+  }
+
+  .hero{
+    width: 80vw;
+    text-align: center;
+    float: none;
+    margin: 0 10vw;
+    padding: 10% 0;
+  }
+
+  .specials-list{
+    margin: 2em 5%;
+  }
+}
+
+@media (max-width: 600px){
+  .specials-list > li .featured-art{
+    flex-direction: column;
+  }
+
+   .specials-list > li .featured-art a{
+    width: 100%;
+   }
+
 }
 
 /* 
@@ -1359,354 +1706,7 @@ nav.main li a {
 }
 
 
-/* 
-----------------------------------------------
-# Home
----------------------------------------------- 
-*/
 
-.home-wrapper{
-  width:  100%;
-  height:  auto;
-  position: relative;
-  background-image: url(../img/stars_sm.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.moon-wrapper{
-  float: left;
-  width:  616px;
-  min-height:  603px;
-  margin: 2em 4.5em 0 -15em;
-  z-index: 5;
-  background-image: url(../img/moon.png);
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  shape-outside: circle(100%); /* Circular wrap */
-  clip-path: circle(100%);     /* Visually clip image */
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(100%);
-}
-
-.home-title{
-  font-family: "Roboto slab", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-  color:  #AFD746;
-  font-size:  3rem;
-  font-weight: 700;
-}
-
-.home-wrapper .content-wrapper{
-  padding:  40px;
-  background-color:  #fff;
-  border-top:  4px solid #D86D7A;
-}
-.countdown-clock{
-  padding:  20px 5px;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.countdown-clock .clock-title{
-  font-size: 1rem;
-  color:  #5EBAAB;
-}
-
-.clock{
-  padding-top: 20px;
-}
-
-.space{
-  min-height:  85vh;
-}
-
-.hero{
-  text-align: left;
-  float: left;
-  width: 50vw;
-  margin-top: 5%;
-}
-
-.space h1{
-  font-family: "Roboto slab", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-  font-weight:  700;
-  color:  #efefef;
-  font-size: 4rem;
-  margin:  10px 0; 
-  padding:  0;
-}
-.space h2{
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
-  color:  #B11225;
-  font-size: 2.5rem;
-  padding: 0;
-  margin:  0;
-}
-.space p{
-  color:  #ccc;
-}
-
-.space p a{
-  text-decoration: none;
-  font-weight:  400;
-  color:  #D86D7A;
-}
-
-.space p a:hover{
-  color:  #B11225;
-}
-
-
-.sp.info-box{
-  margin-left:  40px;
-  padding:  0 20px 0 40px;
-  text-align: left;
-}
-
-.sp.info-box h3{
-  color:  #D86D7A;
-  font-family: "Roboto slab", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-  font-weight:  700;
-  font-size:  3rem;
-  padding:  0;
-  margin:  -13px 0 20px 0;
-}
-
-.sp.info-box h3 i{
-  font-style: normal;
-  font-weight: 100;
-  color:  rgba(255, 255, 255, .125);
-}
-
-.sp.info-box h3 .subject{
-  color:  #333;
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
-  font-weight:  400;
-  font-size:  2rem;
-}
-
-.my-name{
-  color:  #AFD746;
-}
-
-.sp.info-box p{
-  color:  #fff;
-}
-
-.sp.info-box .details{
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.sp.info-box .details li{
-  padding:  5px 0;
-  border-bottom:  1px dotted rgba(255, 255, 255, .125);
-  color:  #efefef;
-}
-
-.sp.info-box .details li span{
-  font-weight:  400;
-  color:  #D86D7A;
-}
-
-.art-frame .price {
-  font-weight:  700;
-  font-size:  2rem;
-  color:  #83AE12;
-}
-
-.art-frame{
-  padding:  40px 0;
-  width:  100%;
-  border-top:  1px solid rgba(255, 255, 255, .125);
-  position: relative;
-  z-index: 20;
-}
-.art-work{
-  width: 280px;
-  margin-right:  20px;
-  float:  left;
-}
-
-.art-work img{
-  max-width: 100%;
-}
-
-.the-special-list{
-  margin-top:  40px;
-  padding:  20px 0;
-  background-color: #000;
-  position:  relative;
-}
-
-.specials-list{
-  list-style-type: none;
-  margin: 2em 15%;
-}
-
-.specials-list > li{
-  display: flex;
-  padding: 2em 0;
-}
-
-.specials-list .button-wrapper{
-  position:  absolute;
-  top: 10px;
-  right:  10px;
-  z-index: 30;
-}
-
-.specials-list .button-wrapper button{
-  background-color: #83AE12;
-  color: #fff;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  padding: 3px 5px;
-  margin-left: 5px;
-}
-
-.nav-link{
-  position:  relative;
-}
-
-.nav-link:hover .popgoes{
-  display: block;
-}
-
-.popgoes{
-  display: none;
-  position:  absolute;
-  width: 300px;
-  height:  100px;
-  background-color: #fff;
-  border-radius: 5px;
-  top:  -110px;
-  right:  20px;
-  background: url(../img/park.jpg);
-  z-index: 20;
-  border: 1px solid rgba(255, 255, 255, .5);
-}
-
-.pop-inner{
-  background-color: rgba(0, 0, 0, .5);
-  margin: 10px;
-  padding: 10px;
-  display: inherit;
-  text-align: center;
-  color:  #fff;
-  font-weight: 400;
-  font-size: 1.3rem;
-  border: 1px solid rgba(255, 255, 255, .65);
-}
-
-.popgoes::after{
-      content:  '';
-      position:  absolute;
-      display: block;
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 10px solid rgba(255, 255, 255, .5);
-      top:  99px;
-      right:  20px;
-      z-index: 10;
-}
-
-@media (max-width: 1080px) {
-  .moon-wrapper{
-    margin-left: -250px;
-    margin-right: 2em;
-  }  
-  .space h1{
-    font-size: 3em;
-  }
-  .space h2{
-    font-size: 2em;
-  }
-  .sp-header h1{
-    font-size: 3.5rem;
-  }
-  
-}
-
-@media (max-width: 829px) {
-
-  .moon-wrapper{
-    width:  80%;
-    margin-left: -400px;
-  }
-
-  .hero{
-    width: 60vw;
-  }
-
-  .specials-list{
-    width: 100%;
-  }
-
-  .specials-list .container{
-    width:  94%;
-  }
-
-  .specials-list .container .four.columns,
-  .specials-list .container .twelve.columns{
-    width: 100%;
-    margin:  0 auto;
-  }
-
-  .specials-list .art-frame .art-work{
-    margin: 0;
-    text-align: center;
-    float: none;
-    display: block;
-    width:  100%;
-  }
-
-  .sp-header h1{
-    font-size: 3rem;
-    margin:  10px 0; 
-    padding:  0;
-  }
-
-  .sp-header h2{
-    font-size: 2rem;
-  }
-
-  .sp-header{
-    
-    width:  80vw;
-    top:  3%;
-    left:  10%;
-    z-index: 10;
-    text-align: center;
-  }
-
-  .sp.info-box{
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .sp.info-box h3{
-    font-size: 2rem;
-  }
-
-}
-
-@media (max-width: 780px) {
-  .moon-wrapper{
-    display: none;
-  }
-
-  .hero{
-    width: 80vw;
-    text-align: center;
-    float: none;
-    margin: 0 10vw;
-    padding: 10% 0;
-  }
-}
 
 /* 
 ----------------------------------------------
