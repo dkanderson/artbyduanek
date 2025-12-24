@@ -109,7 +109,7 @@ console.log(data);
 
         const specList = specData.map((spec) => {
           return `
-            <li data-key="${data.id}">
+            <li class="sp-list-item" data-key="${data.id}">
               <div class="featured-art">  
                 <a
                   href="artwork/specials/${spec.url}"
@@ -146,6 +146,23 @@ console.log(data);
 
         specListContainer.innerHTML = specList.join("");
         specials.appendChild(specListContainer);
+
+        $(".sp-list-item").each(function (i, el) {
+          console.log($(el));
+          if ($(el).visible(true)) {
+            $(el).addClass("move-up");
+          }
+        });
+
+        $(window).scroll(function (event) {
+          $(".sp-list-item").each(function (i, el) {
+            el = $(el);
+
+            if (el.visible(true)) {
+              el.addClass("move-up");
+            }
+          });
+        });
       },
     },
 
