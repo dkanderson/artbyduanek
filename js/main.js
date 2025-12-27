@@ -109,7 +109,7 @@ console.log(data);
 
         const specList = specData.map((spec) => {
           return `
-            <li class="sp-list-item" data-key="${data.id}">
+            <li class="sp-list-item" data-key="${spec.id}">
               <div class="featured-art">  
                 <a
                   href="artwork/specials/${spec.url}"
@@ -202,6 +202,53 @@ console.log(data);
 
     artgallery: {
       init: function () {
+        // Dynamic Data ---------------------------------------------------
+
+        const galleryWrapper = document.getElementById("gallery-inner");
+
+        const galleryData = data.art;
+
+        const galleryList = galleryData.map((gallery) => {
+          return `
+            <article class="art-framed black-white">
+                <button
+                  data-featherlight="#jen"
+                  class="info-button art-details"
+                >
+                  i
+                </button>
+                <a
+                  href="artwork/${gallery.painting_lg}"
+                  data-featherlight="image"
+                  class="art-work img-view"
+                >
+                  <div>
+                    <div class="dart">
+                      <img src="artwork/${gallery.painting_sm}" alt="${gallery.subject}" />
+                    </div>
+                    <div id="temp" class="photo">
+                      <img src="artwork/${gallery.original_img}" alt="${gallery.subject}" />
+                    </div>
+                  </div>
+                </a>
+                <div id="jen" class="info-box">
+                  <ul class="details">
+                    <li><span>Title: </span>${gallery.title}</li>
+                    <li><span>Status: </span> ${gallery.status}</li>
+                    <li><span>Medium: </span> ${gallery.medium}</li>
+                    <li><span>Subject: </span>${gallery.subject}</li>
+                    <li><span>Type: </span>${gallery.type}</li>
+                    <li><span>Size: </span> ${gallery.size}</li>
+                  </ul>
+                </div>
+              </article>
+          `;
+        });
+
+        galleryWrapper.innerHTML = galleryList.join("");
+
+        // Gallery Slide Show ---------------------------------------------------
+
         el = $(".intro.art-gallery");
         el.addClass("animate-in");
 
