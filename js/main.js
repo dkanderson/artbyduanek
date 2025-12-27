@@ -4,6 +4,8 @@
  * ======================================================================== */
 
 import data from "./data.js";
+import quotes from "../data/qod.js";
+
 console.log(data);
 
 (function ($) {
@@ -246,6 +248,19 @@ console.log(data);
         });
 
         galleryWrapper.innerHTML = galleryList.join("");
+
+        const qodWrapper = document.getElementById("qod");
+
+        const qindex = Math.floor(Math.random() * quotes.length);
+
+        const qod = quotes[qindex];
+
+        console.log(qod);
+
+        qodWrapper.innerHTML = `<blockquote cite="${qod.cite}" class="fancy">
+                ${qod.quote}
+              </blockquote>
+              <span class="qod_by">&mdash; ${qod.by}</span>`;
 
         // Gallery Slide Show ---------------------------------------------------
 
